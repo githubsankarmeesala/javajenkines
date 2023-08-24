@@ -16,7 +16,7 @@ spec:
     metadata:
       creationTimestamp: null
       labels:
-        app: ashu-dep1
+        app: sankar-dep1
     spec:
       containers:
       - image: meesalasankar/sankar-webui-cloud4c:tagname # change image to your docker hub image
