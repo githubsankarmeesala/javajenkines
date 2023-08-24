@@ -1,0 +1,27 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  labels:
+    app: sankar-dep1
+  name: sankar-dep1 # change name of deployment
+  namespace: sankar-space # add your namespace info 
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: sankar-dep1
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+      labels:
+        app: ashu-dep1
+    spec:
+      containers:
+      - image: meesalasankar/sankar-webui-cloud4c:tagname # change image to your docker hub image
+        name: sankar-webui-cloud4c
+        ports:
+        - containerPort: 80
+        resources: {}
+status: {}
