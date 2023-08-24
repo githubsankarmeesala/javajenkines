@@ -19,7 +19,7 @@ spec:
         app: sankar-dep1
     spec:
       containers:
-      - image: meesalasankar/sankar-webui-cloud4c:tagname # change image to your docker hub image
+      - image: meesalasankar/sankar-webui-cloud4c:version20 # change image to your docker hub image
         name: sankar-webui-cloud4c
         ports:
         - containerPort: 80
