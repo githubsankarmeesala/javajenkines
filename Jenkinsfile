@@ -2,7 +2,7 @@ pipeline {
   agent {
     label 'main'
   }
-  environement {
+  environment {
     USER = 'ashutoshh'
     DB  = 'mydata'
   }
@@ -18,6 +18,7 @@ pipeline {
             '''
         }
     }
+  }
     post {
       always {
         echo 'this section will be running always with user $USER'
